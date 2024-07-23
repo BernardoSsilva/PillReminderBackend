@@ -1,6 +1,6 @@
 ﻿namespace PillReminder.Comunication.users.Responses
 {
-    public class UserSmallJsonResponse
+    public class UserShortJsonResponse
     {
         public string Name { get; set; } = string.Empty;
 

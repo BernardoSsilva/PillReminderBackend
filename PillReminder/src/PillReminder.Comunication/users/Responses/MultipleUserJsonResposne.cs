@@ -2,6 +2,6 @@
 {
     public class MultipleUserJsonResposne
     {
-        public List<UserSmallJsonResponse> UsersList { get; set; } = [];
+        public List<UserShortJsonResponse> UsersList { get; set; } = [];
     }
 }
