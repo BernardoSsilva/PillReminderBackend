@@ -56,12 +56,14 @@ namespace PillReminder.Infrastructure.Repositories
         }
 
 
-
+        // update user
         public void UpdateUser(UserEntity NewUserData)
         {
             _dbAccess.Users.Update(NewUserData);
         }
 
+
+        // update password
         public async Task<bool> UpdateUserPassword(string userId, string password)
         {
             var user = await _dbAccess.Users.FirstOrDefaultAsync((user) => user.Id == userId);
