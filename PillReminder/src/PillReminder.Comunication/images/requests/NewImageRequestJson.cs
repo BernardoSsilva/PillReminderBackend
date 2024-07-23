@@ -1,12 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace PillReminder.Communication.images.requests
+﻿namespace PillReminder.Communication.images.requests
 {
-    internal class NewImageRequestJson
+    public class NewImageRequestJson
     {
+        public required string ImageName { get; set; }
+
+        public required float ImageSize { get; set; }
+
+        public required string RemedyId { get; set; } 
+        public required string ImageBase64Url { get; set; } 
     }
 }
