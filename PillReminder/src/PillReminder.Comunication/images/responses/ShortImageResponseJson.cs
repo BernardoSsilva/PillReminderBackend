@@ -1,6 +1,6 @@
 ﻿namespace PillReminder.Communication.images.responses
 {
-    public class ShortImageResponseJson
+    public class ImageShortResponseJson
     {
 
         public string ImageName { get; set; } = string.Empty;
