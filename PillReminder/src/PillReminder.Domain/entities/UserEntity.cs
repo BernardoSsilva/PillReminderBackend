@@ -3,11 +3,11 @@
     public class UserEntity
     {
         public string Id { get; set; } = new Guid().ToString();
-        public required string Name { get; set; }
+        public string Name { get; set; } = string.Empty;
 
-        public required string Email { get; set; }
+        public  string Email { get; set; } = string.Empty;
 
-        public required string Password { get; set; }
+        public  string Password { get; set; } = string.Empty;
 
         public DateTime CreatedAt { get; set; } = new DateTime();
         public DateTime? UpdatedAt { get; set; } = null;

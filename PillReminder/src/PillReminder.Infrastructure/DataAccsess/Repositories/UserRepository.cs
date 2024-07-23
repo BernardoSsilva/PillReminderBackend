@@ -5,7 +5,7 @@ using PillReminder.Domain.entities;
 using PillReminder.Domain.Repositories;
 using System.Reflection.Metadata;
 
-namespace PillReminder.Infrastructure.Repositories
+namespace PillReminder.Infrastructure.DataAccsess.Repositories
 {
     public class UserRepository : IUserRepository
     {
@@ -67,12 +67,12 @@ namespace PillReminder.Infrastructure.Repositories
         public async Task<bool> UpdateUserPassword(string userId, string password)
         {
             var user = await _dbAccess.Users.FirstOrDefaultAsync((user) => user.Id == userId);
-            if(user is null)
+            if (user is null)
             {
                 return false;
             }
             user.Password = password;
-            
+
             _dbAccess.Users.Update(user);
             return true;
 

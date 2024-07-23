@@ -951,7 +951,7 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
-      "PillReminder.Comunication/1.0.0": {
+      "PillReminder.Communication/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
@@ -959,10 +959,10 @@
           "PillReminder.Infrastructure": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/PillReminder.Comunication.dll": {}
+          "bin/placeholder/PillReminder.Communication.dll": {}
         },
         "runtime": {
-          "bin/placeholder/PillReminder.Comunication.dll": {}
+          "bin/placeholder/PillReminder.Communication.dll": {}
         }
       },
       "PillReminder.Domain/1.0.0": {
@@ -2720,10 +2720,10 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "PillReminder.Comunication/1.0.0": {
+    "PillReminder.Communication/1.0.0": {
       "type": "project",
-      "path": "../PillReminder.Comunication/PillReminder.Comunication.csproj",
-      "msbuildProject": "../PillReminder.Comunication/PillReminder.Comunication.csproj"
+      "path": "../PillReminder.Comunication/PillReminder.Communication.csproj",
+      "msbuildProject": "../PillReminder.Comunication/PillReminder.Communication.csproj"
     },
     "PillReminder.Domain/1.0.0": {
       "type": "project",
@@ -2747,7 +2747,7 @@
       "Microsoft.EntityFrameworkCore.Design >= 8.0.7",
       "Npgsql >= 8.0.3",
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 8.0.4",
-      "PillReminder.Comunication >= 1.0.0",
+      "PillReminder.Communication >= 1.0.0",
       "PillReminder.Exception >= 1.0.0",
       "PillReminder.Infrastructure >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.4.0"
@@ -2786,8 +2786,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\bernardo.silva\\Documents\\PillReminderBackend\\PillReminder\\src\\PillReminder.Comunication\\PillReminder.Comunication.csproj": {
-              "projectPath": "C:\\Users\\bernardo.silva\\Documents\\PillReminderBackend\\PillReminder\\src\\PillReminder.Comunication\\PillReminder.Comunication.csproj"
+            "C:\\Users\\bernardo.silva\\Documents\\PillReminderBackend\\PillReminder\\src\\PillReminder.Comunication\\PillReminder.Communication.csproj": {
+              "projectPath": "C:\\Users\\bernardo.silva\\Documents\\PillReminderBackend\\PillReminder\\src\\PillReminder.Comunication\\PillReminder.Communication.csproj"
             },
             "C:\\Users\\bernardo.silva\\Documents\\PillReminderBackend\\PillReminder\\src\\PillReminder.Exception\\PillReminder.Exception.csproj": {
               "projectPath": "C:\\Users\\bernardo.silva\\Documents\\PillReminderBackend\\PillReminder\\src\\PillReminder.Exception\\PillReminder.Exception.csproj"
