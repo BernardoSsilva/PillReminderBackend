@@ -33,8 +33,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\bernardo.silva\\Documents\\PillReminderBackend\\PillReminder\\src\\PillReminder.Comunication\\PillReminder.Comunication.csproj": {
-                "projectPath": "C:\\Users\\bernardo.silva\\Documents\\PillReminderBackend\\PillReminder\\src\\PillReminder.Comunication\\PillReminder.Comunication.csproj"
+              "C:\\Users\\bernardo.silva\\Documents\\PillReminderBackend\\PillReminder\\src\\PillReminder.Comunication\\PillReminder.Communication.csproj": {
+                "projectPath": "C:\\Users\\bernardo.silva\\Documents\\PillReminderBackend\\PillReminder\\src\\PillReminder.Comunication\\PillReminder.Communication.csproj"
               },
               "C:\\Users\\bernardo.silva\\Documents\\PillReminderBackend\\PillReminder\\src\\PillReminder.Exception\\PillReminder.Exception.csproj": {
                 "projectPath": "C:\\Users\\bernardo.silva\\Documents\\PillReminderBackend\\PillReminder\\src\\PillReminder.Exception\\PillReminder.Exception.csproj"
@@ -106,12 +106,12 @@
         }
       }
     },
-    "C:\\Users\\bernardo.silva\\Documents\\PillReminderBackend\\PillReminder\\src\\PillReminder.Comunication\\PillReminder.Comunication.csproj": {
+    "C:\\Users\\bernardo.silva\\Documents\\PillReminderBackend\\PillReminder\\src\\PillReminder.Comunication\\PillReminder.Communication.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bernardo.silva\\Documents\\PillReminderBackend\\PillReminder\\src\\PillReminder.Comunication\\PillReminder.Comunication.csproj",
-        "projectName": "PillReminder.Comunication",
-        "projectPath": "C:\\Users\\bernardo.silva\\Documents\\PillReminderBackend\\PillReminder\\src\\PillReminder.Comunication\\PillReminder.Comunication.csproj",
+        "projectUniqueName": "C:\\Users\\bernardo.silva\\Documents\\PillReminderBackend\\PillReminder\\src\\PillReminder.Comunication\\PillReminder.Communication.csproj",
+        "projectName": "PillReminder.Communication",
+        "projectPath": "C:\\Users\\bernardo.silva\\Documents\\PillReminderBackend\\PillReminder\\src\\PillReminder.Comunication\\PillReminder.Communication.csproj",
         "packagesPath": "C:\\Users\\bernardo.silva\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\bernardo.silva\\Documents\\PillReminderBackend\\PillReminder\\src\\PillReminder.Comunication\\obj\\",
         "projectStyle": "PackageReference",
