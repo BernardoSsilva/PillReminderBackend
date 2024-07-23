@@ -1,0 +1,6 @@
+@PillReminder.API_HostAddress = http://localhost:5087
+
+GET {{PillReminder.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
