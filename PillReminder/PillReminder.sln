@@ -15,6 +15,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PillReminder.Infrastructure
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PillReminder.Exception", "src\PillReminder.Exception\PillReminder.Exception.csproj", "{C792B6BD-740D-40B4-92A5-22E170AF4FE1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PillReminderApplication", "src\PillReminderApplication\PillReminderApplication.csproj", "{BF259227-4A92-4B1D-B278-F66B0AEDEDD3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,6 +43,10 @@ Global
 		{C792B6BD-740D-40B4-92A5-22E170AF4FE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C792B6BD-740D-40B4-92A5-22E170AF4FE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C792B6BD-740D-40B4-92A5-22E170AF4FE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF259227-4A92-4B1D-B278-F66B0AEDEDD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF259227-4A92-4B1D-B278-F66B0AEDEDD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF259227-4A92-4B1D-B278-F66B0AEDEDD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF259227-4A92-4B1D-B278-F66B0AEDEDD3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -51,6 +57,7 @@ Global
 		{C409CFF0-701C-4642-8564-BF8458561B8B} = {1E362702-66D3-49C7-94CE-32E40F814E96}
 		{D33CCE49-4C64-4E86-A2AB-0829D1B5D522} = {1E362702-66D3-49C7-94CE-32E40F814E96}
 		{C792B6BD-740D-40B4-92A5-22E170AF4FE1} = {1E362702-66D3-49C7-94CE-32E40F814E96}
+		{BF259227-4A92-4B1D-B278-F66B0AEDEDD3} = {1E362702-66D3-49C7-94CE-32E40F814E96}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {678B6308-B0E5-48B2-892B-BA944D7A563F}

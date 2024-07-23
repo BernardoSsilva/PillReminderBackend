@@ -2,18 +2,18 @@
 
 namespace PillReminder.Exception.exceptions.httpErrors
 {
-    public class BadRequestException : AppExceptions
+    public class ValidationErrorsException : AppExceptions
     {
-        private string Error { get; set; }
-        public BadRequestException(string message) : base(message)
+        private List<string> Errors { get; set; }
+        public ValidationErrorsException(List<string> messages) : base(string.Empty)
         {
-            Error = message;
+            Errors = messages;
         }
         public override int statusCode => (int)HttpStatusCode.BadRequest;
 
         public override List<string> getErrors()
         {
-            return [Error];
+            return Errors;
         }
     }
 }

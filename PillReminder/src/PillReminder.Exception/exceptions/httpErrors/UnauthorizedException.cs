@@ -2,7 +2,7 @@
 
 namespace PillReminder.Exception.exceptions.httpErrors
 {
-    public class UnauthorizedException : AppException
+    public class UnauthorizedException : AppExceptions
     {
         private string Error { get; set; }
         public UnauthorizedException(string message) : base(message)

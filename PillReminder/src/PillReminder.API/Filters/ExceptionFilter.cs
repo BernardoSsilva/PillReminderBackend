@@ -11,7 +11,7 @@ namespace PillReminder.API.Filters
         // realiza chamada ao receber uma excessão
         public void OnException(ExceptionContext context)
         {
-            if (context.Exception is AppException)
+            if (context.Exception is AppExceptions)
             {
                 // para erros tipados
                 ThrowNewException(context);
@@ -25,7 +25,7 @@ namespace PillReminder.API.Filters
 
         private void ThrowNewException(ExceptionContext context)
         {
-            var cashflowException = (AppException)context.Exception;
+            var cashflowException = (AppExceptions)context.Exception;
             context.HttpContext.Response.StatusCode = cashflowException.statusCode;
             context.Result = new ObjectResult(cashflowException.getErrors());
 

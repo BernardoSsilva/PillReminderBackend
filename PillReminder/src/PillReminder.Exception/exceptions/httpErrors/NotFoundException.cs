@@ -3,7 +3,7 @@ using System.Net;
 
 namespace PillReminder.Exception.exceptions
 {
-    public class NotFoundException : AppException
+    public class NotFoundException : AppExceptions
     {
         private string Error { get; set; }
         public NotFoundException(string message) : base(message)

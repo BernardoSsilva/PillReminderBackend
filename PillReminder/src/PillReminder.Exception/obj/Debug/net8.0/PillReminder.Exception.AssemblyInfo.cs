@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PillReminder.Exception")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3e86cb7c38c7199c18ea2a1c7ac038e1af5c6912")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+620aa6d7c4af3e95e17cc5ad1245c5743c008d88")]
 [assembly: System.Reflection.AssemblyProductAttribute("PillReminder.Exception")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PillReminder.Exception")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

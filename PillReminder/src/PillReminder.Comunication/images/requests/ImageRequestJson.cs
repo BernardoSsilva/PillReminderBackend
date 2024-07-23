@@ -1,6 +1,6 @@
 ﻿namespace PillReminder.Communication.images.requests
 {
-    public class NewImageRequestJson
+    public class ImageRequestJson
     {
         public  string ImageName { get; set; } = string.Empty;
 
