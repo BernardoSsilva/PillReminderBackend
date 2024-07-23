@@ -4,14 +4,14 @@ namespace PillReminder.Domain.Repositories
 {
     public interface IRemedyRepository
     {
-        Task RegisterNewRemedy(RemedyEntity remedy);
+        Task<bool> RegisterNewRemedy(RemedyEntity remedy);
         Task<List<RemedyEntity>> FindAllRemedies(string userId);
 
         Task<RemedyEntity> SearchRemedyDetails(string remedyId);
 
-        Task UpdateRemedyData(string remedyId, RemedyEntity remedy);
+        Task<bool> UpdateRemedyData(string remedyId, RemedyEntity remedy);
 
-        Task DeleteRemedy(string remedyId);
+        Task<bool> DeleteRemedy(string remedyId);
 
 
     }

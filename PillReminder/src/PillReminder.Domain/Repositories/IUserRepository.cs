@@ -5,14 +5,14 @@ namespace PillReminder.Domain.Repositories
     public interface IUserRepository
     {
 
-        Task RegisterNewUser(UserEntity user);
-        Task<UserEntity> FindUserById(string id);
+        Task<bool> RegisterNewUser(UserEntity user);
+        Task<UserEntity?> FindUserById(string id);
         Task<List<UserEntity>> FindAllUsers();
 
-        Task UpdateUser(string userId, UserEntity NewUserData);
+        void UpdateUser( UserEntity NewUserData);
 
-        Task UpdateUserPassword(string userId, string password);
-        Task DeleteUser(string userId);
+        Task<bool> UpdateUserPassword(string userId, string password);
+        Task<bool> DeleteUser(string userId);
 
     }
 }
