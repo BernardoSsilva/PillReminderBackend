@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\bernardo.silva\\Documents\\PillReminderBackend\\PillReminder\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{05DDA9FD-4C79-47C8-B3A8-4B12F0DE487E}|PillReminder.Exception\\PillReminder.Exception.csproj|c:\\users\\bernardo.silva\\documents\\pillreminderbackend\\pillreminder\\pillreminder.exception\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{05DDA9FD-4C79-47C8-B3A8-4B12F0DE487E}|PillReminder.Exception\\PillReminder.Exception.csproj|solutionrelative:pillreminder.exception\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C792B6BD-740D-40B4-92A5-22E170AF4FE1}|src\\PillReminder.Exception\\PillReminder.Exception.csproj|c:\\users\\bernardo.silva\\documents\\pillreminderbackend\\pillreminder\\src\\pillreminder.exception\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C792B6BD-740D-40B4-92A5-22E170AF4FE1}|src\\PillReminder.Exception\\PillReminder.Exception.csproj|solutionrelative:src\\pillreminder.exception\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\bernardo.silva\\Documents\\PillReminderBackend\\PillReminder\\PillReminder.Exception\\Class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:PillReminder.Exception\\Class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D33CCE49-4C64-4E86-A2AB-0829D1B5D522}|src\\PillReminder.Infrastructure\\PillReminder.Infrastructure.csproj|c:\\users\\bernardo.silva\\documents\\pillreminderbackend\\pillreminder\\src\\pillreminder.infrastructure\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -32,18 +36,29 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Class1.cs",
-              "DocumentMoniker": "C:\\Users\\bernardo.silva\\Documents\\PillReminderBackend\\PillReminder\\PillReminder.Exception\\Class1.cs",
-              "RelativeDocumentMoniker": "PillReminder.Exception\\Class1.cs",
-              "ToolTip": "C:\\Users\\bernardo.silva\\Documents\\PillReminderBackend\\PillReminder\\PillReminder.Exception\\Class1.cs",
-              "RelativeToolTip": "PillReminder.Exception\\Class1.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentMoniker": "C:\\Users\\bernardo.silva\\Documents\\PillReminderBackend\\PillReminder\\src\\PillReminder.Exception\\Class1.cs",
+              "RelativeDocumentMoniker": "src\\PillReminder.Exception\\Class1.cs",
+              "ToolTip": "C:\\Users\\bernardo.silva\\Documents\\PillReminderBackend\\PillReminder\\src\\PillReminder.Exception\\Class1.cs",
+              "RelativeToolTip": "src\\PillReminder.Exception\\Class1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T12:09:06.125Z",
+              "WhenOpened": "2024-07-23T12:11:35.391Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\bernardo.silva\\Documents\\PillReminderBackend\\PillReminder\\PillReminder.Exception\\Class1.cs",
+              "RelativeDocumentMoniker": "PillReminder.Exception\\Class1.cs",
+              "ToolTip": "C:\\Users\\bernardo.silva\\Documents\\PillReminderBackend\\PillReminder\\PillReminder.Exception\\Class1.cs",
+              "RelativeToolTip": "PillReminder.Exception\\Class1.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T12:09:06.125Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Class1.cs",
               "DocumentMoniker": "C:\\Users\\bernardo.silva\\Documents\\PillReminderBackend\\PillReminder\\src\\PillReminder.Infrastructure\\Class1.cs",
               "RelativeDocumentMoniker": "src\\PillReminder.Infrastructure\\Class1.cs",
@@ -51,12 +66,11 @@
               "RelativeToolTip": "src\\PillReminder.Infrastructure\\Class1.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T12:08:45.436Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-23T12:08:45.436Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Class1.cs",
               "DocumentMoniker": "C:\\Users\\bernardo.silva\\Documents\\PillReminderBackend\\PillReminder\\src\\PillReminder.Comunication\\Class1.cs",
               "RelativeDocumentMoniker": "src\\PillReminder.Comunication\\Class1.cs",
@@ -64,12 +78,11 @@
               "RelativeToolTip": "src\\PillReminder.Comunication\\Class1.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T12:08:26.993Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-23T12:08:26.993Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Class1.cs",
               "DocumentMoniker": "C:\\Users\\bernardo.silva\\Documents\\PillReminderBackend\\PillReminder\\src\\PillReminder.Domain\\Class1.cs",
               "RelativeDocumentMoniker": "src\\PillReminder.Domain\\Class1.cs",
@@ -77,8 +90,7 @@
               "RelativeToolTip": "src\\PillReminder.Domain\\Class1.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T12:08:01.838Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-23T12:08:01.838Z"
             }
           ]
         }

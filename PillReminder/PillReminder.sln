@@ -5,15 +5,15 @@ VisualStudioVersion = 17.10.35013.160
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{1E362702-66D3-49C7-94CE-32E40F814E96}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PillReminder.API", "src\PillReminder.API\PillReminder.API.csproj", "{1E554DEF-DF84-4D9A-84B3-1DDA21984FC2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PillReminder.API", "src\PillReminder.API\PillReminder.API.csproj", "{1E554DEF-DF84-4D9A-84B3-1DDA21984FC2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PillReminder.Domain", "src\PillReminder.Domain\PillReminder.Domain.csproj", "{5FD33C14-47E8-491C-BE62-86B6FA7F6ECA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PillReminder.Domain", "src\PillReminder.Domain\PillReminder.Domain.csproj", "{5FD33C14-47E8-491C-BE62-86B6FA7F6ECA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PillReminder.Comunication", "src\PillReminder.Comunication\PillReminder.Comunication.csproj", "{C409CFF0-701C-4642-8564-BF8458561B8B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PillReminder.Comunication", "src\PillReminder.Comunication\PillReminder.Comunication.csproj", "{C409CFF0-701C-4642-8564-BF8458561B8B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PillReminder.Infrastructure", "src\PillReminder.Infrastructure\PillReminder.Infrastructure.csproj", "{D33CCE49-4C64-4E86-A2AB-0829D1B5D522}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PillReminder.Infrastructure", "src\PillReminder.Infrastructure\PillReminder.Infrastructure.csproj", "{D33CCE49-4C64-4E86-A2AB-0829D1B5D522}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PillReminder.Exception", "PillReminder.Exception\PillReminder.Exception.csproj", "{05DDA9FD-4C79-47C8-B3A8-4B12F0DE487E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PillReminder.Exception", "src\PillReminder.Exception\PillReminder.Exception.csproj", "{C792B6BD-740D-40B4-92A5-22E170AF4FE1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,10 +37,10 @@ Global
 		{D33CCE49-4C64-4E86-A2AB-0829D1B5D522}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D33CCE49-4C64-4E86-A2AB-0829D1B5D522}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D33CCE49-4C64-4E86-A2AB-0829D1B5D522}.Release|Any CPU.Build.0 = Release|Any CPU
-		{05DDA9FD-4C79-47C8-B3A8-4B12F0DE487E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{05DDA9FD-4C79-47C8-B3A8-4B12F0DE487E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{05DDA9FD-4C79-47C8-B3A8-4B12F0DE487E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{05DDA9FD-4C79-47C8-B3A8-4B12F0DE487E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C792B6BD-740D-40B4-92A5-22E170AF4FE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C792B6BD-740D-40B4-92A5-22E170AF4FE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C792B6BD-740D-40B4-92A5-22E170AF4FE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C792B6BD-740D-40B4-92A5-22E170AF4FE1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -50,7 +50,7 @@ Global
 		{5FD33C14-47E8-491C-BE62-86B6FA7F6ECA} = {1E362702-66D3-49C7-94CE-32E40F814E96}
 		{C409CFF0-701C-4642-8564-BF8458561B8B} = {1E362702-66D3-49C7-94CE-32E40F814E96}
 		{D33CCE49-4C64-4E86-A2AB-0829D1B5D522} = {1E362702-66D3-49C7-94CE-32E40F814E96}
-		{05DDA9FD-4C79-47C8-B3A8-4B12F0DE487E} = {1E362702-66D3-49C7-94CE-32E40F814E96}
+		{C792B6BD-740D-40B4-92A5-22E170AF4FE1} = {1E362702-66D3-49C7-94CE-32E40F814E96}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {678B6308-B0E5-48B2-892B-BA944D7A563F}
