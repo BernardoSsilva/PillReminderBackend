@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PillReminder.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+134049e8150a957a45c34c5db6a89e41b39742e4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e91b5ea0a30d8b4e1c7e2e870827c3080614994f")]
 [assembly: System.Reflection.AssemblyProductAttribute("PillReminder.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PillReminder.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

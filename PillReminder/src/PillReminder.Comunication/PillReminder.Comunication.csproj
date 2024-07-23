@@ -6,4 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\PillReminder.Exception\PillReminder.Exception.csproj" />
+    <ProjectReference Include="..\PillReminder.Infrastructure\PillReminder.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>
