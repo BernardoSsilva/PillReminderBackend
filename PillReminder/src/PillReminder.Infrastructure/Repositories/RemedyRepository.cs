@@ -51,7 +51,7 @@ namespace PillReminder.Infrastructure.Repositories
 
 
         //update remedy
-        public void UpdateRemedyData( RemedyEntity remedy)
+        public void UpdateRemedyData(RemedyEntity remedy)
         {
            _dbAccess.Remedies.Update(remedy);
         }
