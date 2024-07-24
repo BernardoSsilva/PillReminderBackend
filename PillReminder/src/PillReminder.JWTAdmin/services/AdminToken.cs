@@ -1,4 +1,5 @@
 ﻿using Microsoft.IdentityModel.Tokens;
+using PillReminder.Exception.exceptions.httpErrors;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
@@ -75,10 +76,10 @@ namespace PillReminder.JWTAdmin.services
                     UserEmail = userEmail
                 };
             }
-            catch (Exception)
+            catch 
             {
                 // Token validation failed
-                return null;
+                throw new UnauthorizedException("invalid token");
             }
         }
     }

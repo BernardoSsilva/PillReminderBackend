@@ -13,7 +13,7 @@ namespace PillReminder.Exception.exceptions
 
         public override List<string> getErrors()
         {
-            return [;
+            return Errors;
         }
     }
 }
