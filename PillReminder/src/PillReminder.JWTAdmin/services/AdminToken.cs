@@ -5,7 +5,7 @@ using System.Text;
 
 namespace PillReminder.JWTAdmin.services
 {
-    internal class AdminToken
+    public class AdminToken
     {
         public byte[] key { get; set; } = Encoding.ASCII.GetBytes("4e594798-6867-4dff-887a-9a7c12882b8e");
 

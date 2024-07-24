@@ -3,7 +3,6 @@
 using Microsoft.EntityFrameworkCore;
 using PillReminder.Domain.entities;
 using PillReminder.Domain.Repositories;
-using System.Reflection.Metadata;
 
 namespace PillReminder.Infrastructure.DataAccsess.Repositories
 {
@@ -76,6 +75,17 @@ namespace PillReminder.Infrastructure.DataAccsess.Repositories
             _dbAccess.Users.Update(user);
             return true;
 
+
+
+        }
+        
+        // find User by email
+
+        public async Task<UserEntity?> FindUserByEmail(string email)
+        {
+            var user = await _dbAccess.Users.FirstOrDefaultAsync(user => user.Email == email);
+            return user;
         }
     }
+
 }
