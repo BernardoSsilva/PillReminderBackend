@@ -1,6 +1,6 @@
 ﻿using System.Net;
 
-namespace PillReminder.Exception.exceptions.httpErrors
+namespace PillReminder.Exception.exceptions
 {
     public class ValidationErrorsException : AppExceptions
     {
@@ -13,7 +13,7 @@ namespace PillReminder.Exception.exceptions.httpErrors
 
         public override List<string> getErrors()
         {
-            return Errors;
+            return [;
         }
     }
 }

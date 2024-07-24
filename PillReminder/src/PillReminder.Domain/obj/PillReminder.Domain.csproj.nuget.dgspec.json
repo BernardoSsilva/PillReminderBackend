@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Bernardo\\Documents\\PillReminderBackend\\PillReminder\\src\\PillReminder.Domain\\PillReminder.Domain.csproj": {}
+    "C:\\Users\\bernardo.silva\\Documents\\PillReminderBackend\\PillReminder\\src\\PillReminder.Domain\\PillReminder.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Bernardo\\Documents\\PillReminderBackend\\PillReminder\\src\\PillReminder.Domain\\PillReminder.Domain.csproj": {
+    "C:\\Users\\bernardo.silva\\Documents\\PillReminderBackend\\PillReminder\\src\\PillReminder.Domain\\PillReminder.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Bernardo\\Documents\\PillReminderBackend\\PillReminder\\src\\PillReminder.Domain\\PillReminder.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\bernardo.silva\\Documents\\PillReminderBackend\\PillReminder\\src\\PillReminder.Domain\\PillReminder.Domain.csproj",
         "projectName": "PillReminder.Domain",
-        "projectPath": "C:\\Users\\Bernardo\\Documents\\PillReminderBackend\\PillReminder\\src\\PillReminder.Domain\\PillReminder.Domain.csproj",
-        "packagesPath": "C:\\Users\\Bernardo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Bernardo\\Documents\\PillReminderBackend\\PillReminder\\src\\PillReminder.Domain\\obj\\",
+        "projectPath": "C:\\Users\\bernardo.silva\\Documents\\PillReminderBackend\\PillReminder\\src\\PillReminder.Domain\\PillReminder.Domain.csproj",
+        "packagesPath": "C:\\Users\\bernardo.silva\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\bernardo.silva\\Documents\\PillReminderBackend\\PillReminder\\src\\PillReminder.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Bernardo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\bernardo.silva\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

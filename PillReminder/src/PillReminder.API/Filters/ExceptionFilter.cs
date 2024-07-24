@@ -8,17 +8,17 @@ namespace PillReminder.API.Filters
     public class ExceptionFilter : IExceptionFilter
     {
 
-        // realiza chamada ao receber uma excessão
+        // call when recibes one exception
         public void OnException(ExceptionContext context)
         {
             if (context.Exception is AppExceptions)
             {
-                // para erros tipados
+                // to typed errors
                 ThrowNewException(context);
             }
             else
             {
-                // erros não tipados
+                // to untyped errors
                 ThrowUnknownException(context);
             }
         }

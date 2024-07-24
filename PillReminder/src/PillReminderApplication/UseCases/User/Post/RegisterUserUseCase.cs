@@ -5,11 +5,9 @@ using PillReminder.Comunication.users.Responses;
 using PillReminder.Domain;
 using PillReminder.Domain.entities;
 using PillReminder.Domain.Repositories;
-using PillReminder.Exception.exceptions.httpErrors;
-using PillReminder.Infrastructure;
+using PillReminder.Exception.exceptions;
 using PillReminderApplication.UseCases.User.Post.Interfaces;
-using PillReminderApplication.Validators.Post;
-using System.Security.Cryptography;
+using PillReminderApplication.Validators;
 
 namespace PillReminderApplication.UseCases.User.Post
 {
