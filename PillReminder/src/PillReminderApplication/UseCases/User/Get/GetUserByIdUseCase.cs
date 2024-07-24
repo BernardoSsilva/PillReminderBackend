@@ -6,24 +6,20 @@ using PillReminderApplication.UseCases.User.Get.Interfaces;
 
 namespace PillReminderApplication.UseCases.User.Get
 {
-    internal class ListUsersUseCase : IListUsersUseCase
+    internal class GetUserByIdUseCase : IGetUserByIdUseCase
     {
         private readonly IMapper _mapper;
         private readonly IUserRepository _repository;
 
-        public ListUsersUseCase(IUserRepository repository, IMapper mapper)
+        public GetUserByIdUseCase(IMapper mapper, IUserRepository repository)
         {
-            _mapper = mapper;
             _repository = repository;
+            _mapper = mapper;
         }
-        public async Task<MultipleUserJsonResposne> Execute()
+        public async Task<DetailedUserJsonResponse> Execute(string userId)
         {
-            var usersList =await _repository.FindAllUsers();
-            var response = new MultipleUserJsonResposne {
-
-                UsersList = _mapper.Map<List<UserShortJsonResponse>>(usersList)
-            };
-            return response;
+            var response = await _repository.FindUserById(userId);
+            return _mapper.Map<DetailedUserJsonResponse>(response);
         }
     }
 }
