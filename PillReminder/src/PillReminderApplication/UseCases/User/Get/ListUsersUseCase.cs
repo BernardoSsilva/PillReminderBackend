@@ -6,7 +6,7 @@ using PillReminderApplication.UseCases.User.Get.Interfaces;
 
 namespace PillReminderApplication.UseCases.User.Get
 {
-    internal class ListUsersUseCase : IListUsersUseCase
+    public class ListUsersUseCase : IListUsersUseCase
     {
         private readonly IMapper _mapper;
         private readonly IUserRepository _repository;

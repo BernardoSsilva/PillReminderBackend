@@ -7,7 +7,7 @@ using PillReminder.Exception.exceptions;
 
 namespace PillReminderApplication.UseCases.User.Delete
 {
-    internal class DeleteUserUseCase : IDeleteUserUseCase
+    public class DeleteUserUseCase : IDeleteUserUseCase
     {
         private readonly IUnitOfWork _unitOfWork;
         private readonly IUserRepository _repository;
