@@ -4,6 +4,6 @@ namespace PillReminderApplication.UseCases.Remedy.Post.Interface
 {
     public interface ICreateNewRemedyUseCase
     {
-        Task Execute(RemedyJsonRequest remedyData);
+        Task Execute(RemedyJsonRequest remedyData, string token);
     }
 }
