@@ -14,7 +14,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PillReminder.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+<<<<<<< HEAD
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fc82ca84a5a2aae6111f164c33cea608b6f47b02")]
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b29926a34b7e660db86a54b3c4dc3e0cae5c09f5")]
+>>>>>>> feature/RemediesUseCases
 [assembly: System.Reflection.AssemblyProductAttribute("PillReminder.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PillReminder.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
