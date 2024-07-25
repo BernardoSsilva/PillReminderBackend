@@ -21,9 +21,9 @@ namespace PillReminder.Infrastructure.DataAccsess.Repositories
         }
 
         // delete remedy
-        public async Task<bool> DeleteRemedy(string remedyId)
+        public async Task<bool> DeleteRemedy(string remedyId, string userId)
         {
-            var remedyToDelete = await _dbAccess.Remedies.FirstOrDefaultAsync(remedy => remedy.Id == remedyId);
+            var remedyToDelete = await _dbAccess.Remedies.FirstOrDefaultAsync(remedy => remedy.Id == remedyId && remedy.UserId == userId);
             if (remedyToDelete is null)
             {
                 return false;
@@ -43,9 +43,9 @@ namespace PillReminder.Infrastructure.DataAccsess.Repositories
 
 
         // find unique remedy
-        public async Task<RemedyEntity?> SearchRemedyDetails(string remedyId)
+        public async Task<RemedyEntity?> SearchRemedyDetails(string remedyId, string userId)
         {
-            var remedy = await _dbAccess.Remedies.AsNoTracking().FirstOrDefaultAsync(remedy => remedy.Id == remedyId);
+            var remedy = await _dbAccess.Remedies.AsNoTracking().FirstOrDefaultAsync(remedy => remedy.Id == remedyId && remedy.UserId == userId);
             return remedy;
         }
 
