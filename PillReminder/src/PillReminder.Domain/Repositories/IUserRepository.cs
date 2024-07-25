@@ -14,5 +14,7 @@ namespace PillReminder.Domain.Repositories
         Task<bool> UpdateUserPassword(string userId, string password);
         Task<bool> DeleteUser(string userId);
 
+        Task<UserEntity?> FindUserByEmail(string email);
+
     }
 }

@@ -3,7 +3,7 @@ using PillReminder.Domain.entities;
 using PillReminder.Domain.Repositories;
 using static System.Net.Mime.MediaTypeNames;
 
-namespace PillReminder.Infrastructure.Repositories
+namespace PillReminder.Infrastructure.DataAccsess.Repositories
 {
     internal class ImagesRepository : IImagesRepository
     {
@@ -52,17 +52,20 @@ namespace PillReminder.Infrastructure.Repositories
             return image;
         }
 
+
+
         // find image by remedy id
-        public Task<ImageEntity?> FindImageByRemedyId(string remedyId)
+        public async Task<ImageEntity?> FindImageByRemedyId(string remedyId)
         {
-            throw new NotImplementedException();
+            var image = await _dbAccess.Images.AsNoTracking().FirstOrDefaultAsync(image => image.RemedyId == remedyId);
+            return image;
         }
 
 
         // delete image by remedy id
         public async Task<bool> DeleteImageByRemedyId(string remedyId)
         {
-            var imageToDelete = await _dbAccess.Images.FirstOrDefaultAsync(image => image.RemedyId == remedyId);
+            var imageToDelete = await FindImageByRemedyId(remedyId);
             if (imageToDelete is null)
             {
                 return false;
