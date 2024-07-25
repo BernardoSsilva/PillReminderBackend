@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using PillReminder.Communication.remedies.responses;
 using PillReminder.Domain.Repositories;
+using PillReminder.Exception.exceptions;
 using PillReminder.JWTAdmin.services;
 using PillReminderApplication.UseCases.Remedy.Get.interfaces;
 
@@ -23,6 +24,11 @@ namespace PillReminderApplication.UseCases.Remedy.Get
 
             var dedcodedToken = jwtAdmin.DecodeToken(token);
             var result = await _repository.SearchRemedyDetails(remedyId, dedcodedToken.UserId);
+
+            if(result is null)
+            {
+                throw new NotFoundException("remedy not found");
+            }
 
             return _mapper.Map<RemedyDetailedJsonResponse>(result);
         }
