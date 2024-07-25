@@ -24,8 +24,12 @@ namespace PillReminderApplication.UseCases.Remedy.Post
         }
         public async Task Execute(RemedyJsonRequest remedyData, string token)
         {
-            Validate(remedyData);
             var jwtAdmin = new AdminToken();
+
+            jwtAdmin.ValidateToken(token)
+            Validate(remedyData);
+
+
             var decodedToken = jwtAdmin.DecodeToken(token);
             var newRemedy = new RemedyEntity
             {
