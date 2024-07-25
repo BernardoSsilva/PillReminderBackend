@@ -18,6 +18,7 @@ builder.Services.AddEntityFrameworkNpgsql()
 
 builder.Services.AddRouting(options => options.LowercaseUrls = true);
 builder.Services.AddApplication();
+builder.Services.AddInfrastructure();
 
 var app = builder.Build();
 
