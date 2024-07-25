@@ -16,6 +16,7 @@
     <ProjectReference Include="..\PillReminder.Comunication\PillReminder.Communication.csproj" />
     <ProjectReference Include="..\PillReminder.Exception\PillReminder.Exception.csproj" />
     <ProjectReference Include="..\PillReminder.Infrastructure\PillReminder.Infrastructure.csproj" />
+    <ProjectReference Include="..\PillReminder.JWTAdmin\PillReminder.JWTAdmin.csproj" />
   </ItemGroup>
 
 </Project>
