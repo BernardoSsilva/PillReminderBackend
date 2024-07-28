@@ -24,6 +24,15 @@ namespace PillReminder.API.controllers.User
         }
 
         [HttpGet]
+        [Route("{userId}")]
+        [ProducesResponseType(typeof(DetailedUserJsonResponse), StatusCodes.Status200OK)]
+        public async Task<IActionResult> findUserById(string userId, [FromServices] IGetUserByIdUseCase useCase)
+        {
+            var result = await useCase.Execute(userId);
+            return Ok(result);
+        }
+
+        [HttpGet]
         [ProducesResponseType(typeof(MultipleUserJsonResposne) ,StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         public async Task<IActionResult> findAllUsers([FromServices] IListUsersUseCase useCase)
