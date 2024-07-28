@@ -2,7 +2,7 @@
 using PillReminder.Domain.entities;
 using PillReminder.Domain.Repositories;
 
-namespace PillReminder.Infrastructure.Repositories
+namespace PillReminder.Infrastructure.DataAccsess.Repositories
 {
     internal class RemedyRepository : IRemedyRepository
     {
@@ -12,7 +12,7 @@ namespace PillReminder.Infrastructure.Repositories
         {
             _dbAccess = dbAccess;
         }
-         
+
         //register new remedy
         public async Task<bool> RegisterNewRemedy(RemedyEntity remedy)
         {
@@ -21,10 +21,10 @@ namespace PillReminder.Infrastructure.Repositories
         }
 
         // delete remedy
-        public async Task<bool> DeleteRemedy(string remedyId)
+        public async Task<bool> DeleteRemedy(string remedyId, string userId)
         {
-            var remedyToDelete = await _dbAccess.Remedies.FirstOrDefaultAsync(remedy => remedy.Id == remedyId);
-            if(remedyToDelete is null)
+            var remedyToDelete = await _dbAccess.Remedies.FirstOrDefaultAsync(remedy => remedy.Id == remedyId && remedy.UserId == userId);
+            if (remedyToDelete is null)
             {
                 return false;
             }
@@ -40,12 +40,12 @@ namespace PillReminder.Infrastructure.Repositories
             return remediesList;
         }
 
-     
+
 
         // find unique remedy
-        public async Task<RemedyEntity?> SearchRemedyDetails(string remedyId)
+        public async Task<RemedyEntity?> SearchRemedyDetails(string remedyId, string userId)
         {
-            var remedy = await _dbAccess.Remedies.AsNoTracking().FirstOrDefaultAsync(remedy => remedy.Id == remedyId);
+            var remedy = await _dbAccess.Remedies.AsNoTracking().FirstOrDefaultAsync(remedy => remedy.Id == remedyId && remedy.UserId == userId);
             return remedy;
         }
 
@@ -53,7 +53,7 @@ namespace PillReminder.Infrastructure.Repositories
         //update remedy
         public void UpdateRemedyData(RemedyEntity remedy)
         {
-           _dbAccess.Remedies.Update(remedy);
+            _dbAccess.Remedies.Update(remedy);
         }
     }
 }

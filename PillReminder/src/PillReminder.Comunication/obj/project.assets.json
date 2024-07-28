@@ -773,9 +773,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Bernardo\\Documents\\PillReminderBackend\\PillReminder\\src\\PillReminder.Comunication\\PillReminder.Comunication.csproj",
-      "projectName": "PillReminder.Comunication",
-      "projectPath": "C:\\Users\\Bernardo\\Documents\\PillReminderBackend\\PillReminder\\src\\PillReminder.Comunication\\PillReminder.Comunication.csproj",
+      "projectUniqueName": "C:\\Users\\Bernardo\\Documents\\PillReminderBackend\\PillReminder\\src\\PillReminder.Comunication\\PillReminder.Communication.csproj",
+      "projectName": "PillReminder.Communication",
+      "projectPath": "C:\\Users\\Bernardo\\Documents\\PillReminderBackend\\PillReminder\\src\\PillReminder.Comunication\\PillReminder.Communication.csproj",
       "packagesPath": "C:\\Users\\Bernardo\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Bernardo\\Documents\\PillReminderBackend\\PillReminder\\src\\PillReminder.Comunication\\obj\\",
       "projectStyle": "PackageReference",
@@ -841,5 +841,13 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\Bernardo\\Documents\\PillReminderBackend\\PillReminder\\src\\PillReminder.Comunication\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

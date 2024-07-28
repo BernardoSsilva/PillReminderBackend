@@ -7,11 +7,11 @@ namespace PillReminder.Domain.Repositories
         Task<bool> RegisterNewRemedy(RemedyEntity remedy);
         Task<List<RemedyEntity>> FindAllRemedies(string userId);
 
-        Task<RemedyEntity?> SearchRemedyDetails(string remedyId);
+        Task<RemedyEntity?> SearchRemedyDetails(string remedyId, string userId);
 
-        void UpdateRemedyData( RemedyEntity remedy);
+        void UpdateRemedyData(RemedyEntity remedy);
 
-        Task<bool> DeleteRemedy(string remedyId);
+        Task<bool> DeleteRemedy(string remedyId, string userId);
 
 
     }

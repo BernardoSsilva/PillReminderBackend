@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0KxFRPBHaBQ=",
+  "dgSpecHash": "Gd6IpveFH1g=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Bernardo\\Documents\\PillReminderBackend\\PillReminder\\src\\PillReminder.Comunication\\PillReminder.Comunication.csproj",
+  "projectFilePath": "C:\\Users\\Bernardo\\Documents\\PillReminderBackend\\PillReminder\\src\\PillReminder.Comunication\\PillReminder.Communication.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Bernardo\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.7\\microsoft.entityframeworkcore.8.0.7.nupkg.sha512",
     "C:\\Users\\Bernardo\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.7\\microsoft.entityframeworkcore.abstractions.8.0.7.nupkg.sha512",
@@ -20,5 +20,12 @@
     "C:\\Users\\Bernardo\\.nuget\\packages\\npgsql\\8.0.3\\npgsql.8.0.3.nupkg.sha512",
     "C:\\Users\\Bernardo\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\8.0.4\\npgsql.entityframeworkcore.postgresql.8.0.4.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\Bernardo\\Documents\\PillReminderBackend\\PillReminder\\src\\PillReminder.Comunication\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
