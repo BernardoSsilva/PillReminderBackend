@@ -1,4 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using PillReminder.Communication.users.Requests;
+using PillReminder.Communication.users.Responses;
 using PillReminder.Comunication.users.Requests;
 using PillReminder.Comunication.users.Responses;
 using PillReminderApplication.UseCases.User.Get.Interfaces;
@@ -11,12 +13,19 @@ namespace PillReminder.API.controllers.User
     [ApiController]
     public class UsersController : ControllerBase
     {
+        [HttpPost("/login")]
+        [ProducesResponseType(typeof(UserAuthenticationResponseJson), StatusCodes.Status200OK)]
+        public async Task<IActionResult> AuthenticateUser([FromBody] UserAuthenticationRequestJson requestBody, [FromServices] IAuthenticateUserUseCase useCase)
+        {
+            var response = await useCase.Execute(requestBody);
+            return Ok(response);
+        }
 
         [HttpPost]
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
 
-        public async Task<IActionResult> registerNewUser([FromBody] UserJsonRequest requestBody, [FromServices] IRegisterUserUseCase useCase) {
+        public async Task<IActionResult> RegisterNewUser([FromBody] UserJsonRequest requestBody, [FromServices] IRegisterUserUseCase useCase) {
 
             var result = await useCase.Execute(requestBody);
 
@@ -26,7 +35,7 @@ namespace PillReminder.API.controllers.User
         [HttpGet]
         [Route("{userId}")]
         [ProducesResponseType(typeof(DetailedUserJsonResponse), StatusCodes.Status200OK)]
-        public async Task<IActionResult> findUserById(string userId, [FromServices] IGetUserByIdUseCase useCase)
+        public async Task<IActionResult> FindUserById(string userId, [FromServices] IGetUserByIdUseCase useCase)
         {
             var result = await useCase.Execute(userId);
             return Ok(result);
@@ -35,7 +44,7 @@ namespace PillReminder.API.controllers.User
         [HttpGet]
         [ProducesResponseType(typeof(MultipleUserJsonResposne) ,StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
-        public async Task<IActionResult> findAllUsers([FromServices] IListUsersUseCase useCase)
+        public async Task<IActionResult> FindAllUsers([FromServices] IListUsersUseCase useCase)
         {
             var result = await useCase.Execute();
 
@@ -46,5 +55,7 @@ namespace PillReminder.API.controllers.User
 
             return Ok(result);
         }
+
+      
     }
 }
