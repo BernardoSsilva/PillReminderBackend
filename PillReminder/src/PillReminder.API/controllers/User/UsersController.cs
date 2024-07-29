@@ -5,6 +5,7 @@ using PillReminder.Comunication.users.Requests;
 using PillReminder.Comunication.users.Responses;
 using PillReminderApplication.UseCases.User.Get.Interfaces;
 using PillReminderApplication.UseCases.User.Post.Interfaces;
+using PillReminderApplication.UseCases.User.Put.Interfaces;
 using System.Xml.Linq;
 
 namespace PillReminder.API.controllers.User
@@ -13,7 +14,7 @@ namespace PillReminder.API.controllers.User
     [ApiController]
     public class UsersController : ControllerBase
     {
-        [HttpPost("/login")]
+        [HttpPost("/user/login")]
         [ProducesResponseType(typeof(UserAuthenticationResponseJson), StatusCodes.Status200OK)]
         public async Task<IActionResult> AuthenticateUser([FromBody] UserAuthenticationRequestJson requestBody, [FromServices] IAuthenticateUserUseCase useCase)
         {
@@ -56,6 +57,13 @@ namespace PillReminder.API.controllers.User
             return Ok(result);
         }
 
-      
+
+        [HttpPut]
+        [ProducesResponseType(StatusCodes.Status202Accepted)]
+        public async Task<IActionResult> UpdateUserData([FromServices] IUpdateUserDataUseCase useCase, [FromBody] UserJsonRequest jsonRequest, [FromHeader] string userToken)
+        {
+            await useCase.Execute(jsonRequest, userToken);
+            return Accepted();
+        }
     }
 }
