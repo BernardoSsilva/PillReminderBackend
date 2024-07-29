@@ -3,6 +3,7 @@ using PillReminder.Communication.users.Requests;
 using PillReminder.Communication.users.Responses;
 using PillReminder.Comunication.users.Requests;
 using PillReminder.Comunication.users.Responses;
+using PillReminderApplication.UseCases.User.Delete.Interfaces;
 using PillReminderApplication.UseCases.User.Get.Interfaces;
 using PillReminderApplication.UseCases.User.Post.Interfaces;
 using PillReminderApplication.UseCases.User.Put.Interfaces;
@@ -63,6 +64,14 @@ namespace PillReminder.API.controllers.User
         public async Task<IActionResult> UpdateUserData([FromServices] IUpdateUserDataUseCase useCase, [FromBody] UserJsonRequest jsonRequest, [FromHeader] string userToken)
         {
             await useCase.Execute(jsonRequest, userToken);
+            return Accepted();
+        }
+
+        [HttpDelete]
+        [ProducesResponseType(StatusCodes.Status202Accepted)]
+        public async Task<IActionResult> DeleteUser([FromServices] IDeleteUserUseCase useCase, [FromHeader] string userToken)
+        {
+            await useCase.Execute(userToken);
             return Accepted();
         }
     }

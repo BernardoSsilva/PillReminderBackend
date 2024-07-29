@@ -2,6 +2,6 @@
 {
     public interface IDeleteUserUseCase
     {
-        Task Execute(string userId);
+        Task Execute(string userToken);
     }
 }
