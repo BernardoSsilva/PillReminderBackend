@@ -4,6 +4,6 @@ namespace PillReminderApplication.UseCases.User.Put.Interfaces
 {
     public interface IUpdateUserDataUseCase
     {
-        Task Execute(string userId, UserJsonRequest requestData);
+        Task Execute( UserJsonRequest requestData, string token);
     }
 }

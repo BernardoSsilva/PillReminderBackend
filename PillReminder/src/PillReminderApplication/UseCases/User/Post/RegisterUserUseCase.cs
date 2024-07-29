@@ -30,9 +30,13 @@ namespace PillReminderApplication.UseCases.User.Post
             Validate(user);
             user.Password = user.Password.ToString().GetMD5();
 
-            await _repository.RegisterNewUser(_mapper.Map<UserEntity>(user));
+            var insertData = _mapper.Map<UserEntity>(user);
+
+            Console.WriteLine(insertData);
+
+            await _repository.RegisterNewUser(insertData);
             await _unitOfWork.Commit();
-            return _mapper.Map<UserShortJsonResponse>(user);
+            return  _mapper.Map<UserShortJsonResponse>(insertData);
         }
 
         private void Validate(UserJsonRequest user)

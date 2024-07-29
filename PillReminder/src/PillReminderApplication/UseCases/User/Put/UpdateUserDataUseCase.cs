@@ -4,6 +4,7 @@ using PillReminder.Domain;
 using PillReminder.Domain.entities;
 using PillReminder.Domain.Repositories;
 using PillReminder.Exception.exceptions;
+using PillReminder.JWTAdmin.services;
 using PillReminderApplication.UseCases.User.Put.Interfaces;
 using PillReminderApplication.Validators;
 
@@ -21,17 +22,28 @@ namespace PillReminderApplication.UseCases.User.Put
             _unitOfWork = unitOfWork;
             _repository = repository;
         }
-        public async Task Execute(string userId, UserJsonRequest requestData)
+        public async Task Execute( UserJsonRequest requestData, string token)
         {
+            var tokenAdmin = new AdminToken();
+
+            tokenAdmin.ValidateToken(token);
+
+            var decodedToken = tokenAdmin.DecodeToken(token);
+
             Validate(requestData);
-            var user = await _repository.FindUserById(userId);
+
+
+            var user = await _repository.FindUserById(decodedToken.UserId.ToString());
+
 
             if (user is null)
             {
                 throw new NotFoundException("User not found");
             }
-            var newUserData = _mapper.Map(user, requestData);
-            _repository.UpdateUser(_mapper.Map<UserEntity>(requestData));
+
+
+            var newUserData = _mapper.Map(requestData, user);
+            _repository.UpdateUser(newUserData);
 
             await _unitOfWork.Commit();
         }
