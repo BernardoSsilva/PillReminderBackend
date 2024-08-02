@@ -29,8 +29,11 @@ namespace PillReminderApplication.UseCases.User.Post
         {
             Validate(user);
             user.Password = user.Password.ToString().GetMD5();
+            
 
             var insertData = _mapper.Map<UserEntity>(user);
+
+            insertData.CreatedAt = DateTime.UtcNow;
 
             Console.WriteLine(insertData);
 

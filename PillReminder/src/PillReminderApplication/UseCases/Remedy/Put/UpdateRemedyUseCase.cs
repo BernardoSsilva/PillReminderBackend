@@ -38,6 +38,8 @@ namespace PillReminderApplication.UseCases.Remedy.Put
             }
 
             var newRemedyData =  _mapper.Map(requestData, remedyToEdit);
+
+            newRemedyData.UpdatedAt = DateTime.UtcNow;
             _repository.UpdateRemedyData(newRemedyData);
             await _unitOfWork.Commit();
 

@@ -43,6 +43,7 @@ namespace PillReminderApplication.UseCases.User.Put
 
 
             var newUserData = _mapper.Map(requestData, user);
+            newUserData.UpdatedAt = DateTime.UtcNow;
             _repository.UpdateUser(newUserData);
 
             await _unitOfWork.Commit();
