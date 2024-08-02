@@ -14,10 +14,11 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddMvc(options => options.Filters.Add(typeof(ExceptionFilter)));
 
 builder.Services.AddEntityFrameworkNpgsql()
-    .AddDbContext<PillReminderDbAccess>(options => options.UseNpgsql("Host=localhost;Port=5432;Pooling=true;Database=PillReminderDatabase;User Id=postgres;Password=postgres"));
+    .AddDbContext<PillReminderDbAccess>(options => options.UseNpgsql("Host=localhost;Port=3306;Pooling=true;Database=PillReminderDatabase;User Id=postgres;Password=admin"));
 
 builder.Services.AddRouting(options => options.LowercaseUrls = true);
 builder.Services.AddApplication();
+builder.Services.AddInfrastructure();
 
 var app = builder.Build();
 

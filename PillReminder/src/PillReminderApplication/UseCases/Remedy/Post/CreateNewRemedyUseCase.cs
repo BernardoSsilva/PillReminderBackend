@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using PillReminder.Communication.remedies.requests;
+using PillReminder.Communication.remedies.responses;
 using PillReminder.Domain;
 using PillReminder.Domain.entities;
 using PillReminder.Domain.Repositories;
@@ -22,7 +23,7 @@ namespace PillReminderApplication.UseCases.Remedy.Post
             _repository = repository;
             _unitOfWork = unitOfWork;
         }
-        public async Task Execute(RemedyJsonRequest remedyData, string token)
+        public async Task<RemedyShortJsonResponse> Execute(RemedyJsonRequest remedyData, string token)
         {
             var jwtAdmin = new AdminToken();
 
@@ -38,10 +39,14 @@ namespace PillReminderApplication.UseCases.Remedy.Post
                 RemedyName = remedyData.RemedyName,
                 ScheduledHours = remedyData.ScheduledHours,
                 UsagePeriod = remedyData.UsagePeriod,
+                CreatedAt = DateTime.UtcNow
             };
+
 
             await _repository.RegisterNewRemedy(newRemedy);
             await _unitOfWork.Commit();
+
+            return _mapper.Map<RemedyShortJsonResponse>(newRemedy);
         }
 
         private void Validate(RemedyJsonRequest remedyData)

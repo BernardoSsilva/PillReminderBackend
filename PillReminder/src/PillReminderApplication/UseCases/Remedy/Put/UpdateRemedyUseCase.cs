@@ -37,8 +37,10 @@ namespace PillReminderApplication.UseCases.Remedy.Put
                 throw new NotFoundException("Remedy not found");
             }
 
-            var newRemedyData =  _mapper.Map(remedyToEdit, requestData);
-            _repository.UpdateRemedyData(_mapper.Map<RemedyEntity>(newRemedyData));
+            var newRemedyData =  _mapper.Map(requestData, remedyToEdit);
+
+            newRemedyData.UpdatedAt = DateTime.UtcNow;
+            _repository.UpdateRemedyData(newRemedyData);
             await _unitOfWork.Commit();
 
 

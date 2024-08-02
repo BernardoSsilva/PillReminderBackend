@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PillReminder.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fb7e8723ee75759889ea6f3b9125eff571da9c86")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+736ce02ee3fc549e13a2c374da4b93a1aab8e2e1")]
 [assembly: System.Reflection.AssemblyProductAttribute("PillReminder.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PillReminder.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
